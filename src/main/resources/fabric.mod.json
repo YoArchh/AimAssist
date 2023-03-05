@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "aim-assist",
+  "version": "${version}",
+  "name": "Aim Assist",
+  "description": "Adds FPS/TPS controller style aim assist to the game.",
+  "authors": [
+    "YoArchh"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/YoArchh/AimAssist",
+    "issues": "https://github.com/YoArchh/AimAsisst/issues"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/aim-assist/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.yoarchh.aimassist.AimAssistMod"
+    ]
+  },
+  "mixins": [
+    "aim-assist.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
